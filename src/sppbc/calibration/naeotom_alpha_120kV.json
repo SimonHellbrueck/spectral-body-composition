@@ -1,0 +1,47 @@
+{
+ "name": "NAEOTOM Alpha, 120 kV, Qr40, QIR 3, 1.0 mm",
+ "kvp": 120,
+ "note": "Derived from pooled contrast-enhanced clinical scans of this protocol, same procedure as at 140 kV.",
+ "c_ref": 0.4455,
+ "kL": 37.2866,
+ "kH": 16.9375,
+ "r": 2.2014,
+ "e_eff": {
+  "L": 59.6,
+  "H": 84.3
+ },
+ "fat": {
+  "low": [
+   -115.0,
+   -93.0
+  ]
+ },
+ "soft": {
+  "low": [
+   55.1,
+   52.0
+  ]
+ },
+ "calcium": {
+  "kL": 1.5976,
+  "kH": 1.0733
+ },
+ "mmd": {
+  "air": [
+   -1000.0,
+   -1000.0
+  ],
+  "v_lung": -150.0,
+  "fat_air_iod": 0.4,
+  "near_air_vmi": -400.0,
+  "pv_fat_min": 0.5,
+  "ca_shrink": 80.0,
+  "noise": {
+   "low": [
+    2.6953,
+    2.4086,
+    0.9284
+   ]
+  }
+ }
+}

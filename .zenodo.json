@@ -1,0 +1,54 @@
+{
+  "upload_type": "software",
+  "title": "sppbc: body composition from photon-counting CT by anatomy-guided material decomposition",
+  "license": "MIT",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Hellbrueck, Simon",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Kausch, Julian",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Mirbagheri, Hamed",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Cortes, Abraham",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Garcés Echeverri, Juan Camilo",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Oestreicher, Gebhard",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Scheurig-Muenkler, Christian",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Kroencke, Thomas",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    },
+    {
+      "name": "Decker, Josua A.",
+      "affiliation": "Department of Diagnostic and Interventional Radiology, University Hospital Augsburg, Augsburg, Germany"
+    }
+  ],
+  "keywords": [
+    "body composition",
+    "photon-counting CT",
+    "material decomposition",
+    "adipose tissue",
+    "spectral CT",
+    "deep learning segmentation"
+  ],
+  "description": "<p>Reference implementation accompanying the article &ldquo;Body composition on contrast-enhanced photon-counting CT: anatomy-guided material decomposition versus threshold segmentation&rdquo;. The software performs an anatomy-guided three-material decomposition of contrast-enhanced photon-counting CT into adipose tissue, an anatomically selected iodine-free base tissue and iodine, and compares the resulting adipose volumes with threshold-based volumes (&minus;190 to &minus;30 HU) over identical voxels. Imaging data are not included and cannot be shared publicly.</p>",
+  "notes": "Funded by the Margarete-Ammon-Stiftung (Thannhausen, Germany; project 10_2026, awarded to J.A.D.). Secondary analysis of the Equal-CT trial, ClinicalTrials.gov NCT06965790."
+}

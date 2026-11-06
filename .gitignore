@@ -1,0 +1,11 @@
+# never commit image data or results
+*.dcm
+*.nii
+*.nii.gz
+*.json.out
+results/
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/

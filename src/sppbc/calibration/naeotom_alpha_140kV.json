@@ -1,0 +1,47 @@
+{
+ "name": "NAEOTOM Alpha, 140 kV, Qr40, QIR 3, 1.0 mm",
+ "kvp": 140,
+ "note": "Derived from a single contrast-enhanced clinical scan of this protocol (70-keV weight refitted from L/H; iodine slopes from enhancing regions; reference adipose tissue = most frequent subcutaneous fat value; liver base tissue from ICRU-46 at the effective energies).",
+ "c_ref": 0.5426,
+ "kL": 35.526,
+ "kH": 14.7075,
+ "r": 2.4155,
+ "e_eff": {
+  "L": 61.0,
+  "H": 89.5
+ },
+ "fat": {
+  "low": [
+   -115.0,
+   -91.0
+  ]
+ },
+ "soft": {
+  "low": [
+   54.9,
+   51.7
+  ]
+ },
+ "calcium": {
+  "kL": 1.5384,
+  "kH": 1.0323
+ },
+ "mmd": {
+  "air": [
+   -1000.0,
+   -1000.0
+  ],
+  "v_lung": -150.0,
+  "fat_air_iod": 0.4,
+  "near_air_vmi": -400.0,
+  "pv_fat_min": 0.5,
+  "ca_shrink": 80.0,
+  "noise": {
+   "low": [
+    2.8392,
+    2.5228,
+    0.9317
+   ]
+  }
+ }
+}

@@ -1,0 +1,15 @@
+# Python environment for sppbc. Create: conda env create -f environment.yml, then: pip install -e .
+name: sppbc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.5
+  - scipy=1.18
+  - pandas=3.0
+  - pydicom=3.0
+  - nibabel=5.4
+  - xraylib=4.3
+  - numba        # optional, accelerates SPP decoding; pure-Python fallback if absent
+  - pytest
+  - pip

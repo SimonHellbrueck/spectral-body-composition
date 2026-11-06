@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sppbc"
+version = "1.0.0"
+description = "Body composition from Siemens SPP photon-counting CT data: anatomy-guided material decomposition versus threshold segmentation"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+keywords = ["body composition", "photon-counting CT", "material decomposition", "adipose tissue", "spectral CT", "deep learning segmentation"]
+authors = [
+  { name = "Simon Hellbrueck" },
+  { name = "Julian Kausch" },
+  { name = "Hamed Mirbagheri" },
+  { name = "Abraham Cortes" },
+  { name = "Juan Camilo Garcés Echeverri" },
+  { name = "Gebhard Oestreicher" },
+  { name = "Christian Scheurig-Muenkler" },
+  { name = "Thomas Kroencke" },
+  { name = "Josua A. Decker" }
+]
+dependencies = ["numpy", "scipy", "pandas", "pydicom", "nibabel", "xraylib"]
+
+[project.optional-dependencies]
+# optional: accelerates decoding of the Siemens SPP raw files; a pure-Python fallback is used if absent
+speed = ["numba"]
+
+[project.urls]
+Repository = "https://github.com/SimonHellbrueck/spectral-body-composition"
+
+[project.scripts]
+sppbc = "sppbc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sppbc = ["calibration/*.json"]
+
+[tool.pytest.ini_options]
+# lets `pytest` run straight from a clone, without installing the package first
+pythonpath = ["src"]
+testpaths = ["tests"]
